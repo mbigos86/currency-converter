@@ -1,1 +1,2 @@
 # Currency converter
+## Converter info
