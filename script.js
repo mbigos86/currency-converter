@@ -1,18 +1,19 @@
-let formElement = document.querySelector(".js-form");
-let amountElement = document.querySelector(".js-amount");
-let currencyElement = document.querySelector(".js-currency");
-let resultElement = document.querySelector(".js-result");
-let moneyElement = document.querySelector(".js-cash");
+const formElement = document.querySelector(".js-form");
+const amountElement = document.querySelector(".js-amount");
+const currencyElement = document.querySelector(".js-currency");
+const resultElement = document.querySelector(".js-result");
+const moneyElement = document.querySelector(".js-cash");
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let amount = amountElement.value;
-    let currency = currencyElement.value;
+    const amount = amountElement.value;
+    const currency = currencyElement.value;
+    
     let result = resultElement.value;
 
-    let USD = 4.118;
-    let EUR = 4.473;
+    const USD = 4.118;
+    const EUR = 4.473;
 
     switch (currency) {
         case "USD":
