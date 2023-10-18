@@ -1,8 +1,9 @@
-.element {
+.element__background{
     
-    background-image: url("images/background.jpg");
+    background-image: url("../images/background.jpg");
     background-size: cover;
     margin: 0px auto;
     padding-bottom: 120px;
     padding-top: 120px;
+    min-height: 100vh;
 }

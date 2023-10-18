@@ -14,10 +14,12 @@
     }
   };
 
+
   const showResult = (amount, result, currency) => {
     const resultElement = document.querySelector(".js-result");
     resultElement.innerText = `${amount} PLN to  ${result.toFixed(2)} ${currency}`;
   };
+
 
   const resetResult = () => {
     const formElement = document.querySelector(".js-form");
@@ -25,6 +27,7 @@
     formElement.reset();
     resultElement.innerText = "";
   };
+
 
   const onFormSubmit = (event) => {
     event.preventDefault();
@@ -40,6 +43,7 @@
     showResult(amount, result, currency);
   }
 
+  
   const init = () => {
     const formElement = document.querySelector(".js-form");
     const resetButton = document.querySelector(".js-resetButton");
